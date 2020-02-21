@@ -1,2 +1,2 @@
 # B2Clean
-website for small cleaning business
+Website for B2Clean Limited
