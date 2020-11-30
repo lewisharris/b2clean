@@ -4,6 +4,7 @@ import Services from "./Services";
 import Covid from "./Covid";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./layout/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
