@@ -13,7 +13,7 @@ const Container = styled.div`
   background: gray;
   background-image: url(${CovidImage});
   background-size: cover;
-  background-origin: content-box;
+  background-position: bottom;
   background-repeat: none;
   position: relative;
   box-sizing: border-box;
