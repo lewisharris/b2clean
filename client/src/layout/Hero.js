@@ -38,19 +38,16 @@ const Overlay = styled.div`
   z-index: 1;
 `;
 
-export default function Hero() {
+export default function Hero(props) {
   return (
     <div>
       <Container>
         <Overlay />
         <NavBar />
         <Headers>
-          <H1>COVID19</H1>
-          <H2>
-            A Range of services for your business From Pressure washing to
-            making your property Covid Clean
-          </H2>
-          <Button>Find out more</Button>
+          <H1>{props.title}</H1>
+          <H2>{props.body}</H2>
+          <Button>{props.button}</Button>
           <HeroLinks />
         </Headers>
       </Container>
