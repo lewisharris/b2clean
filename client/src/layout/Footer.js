@@ -34,7 +34,13 @@ export default function Footer() {
         <Link to="/covid">COVID19</Link>
         <Link to="/contact">Contact</Link>
       </Segment>
-      <Segment>Address</Segment>
+      <Segment>
+        <div>B2Clean ltd</div>
+        <div>Malvern House</div>
+        <div>New Road</div>
+        <div>Solihull</div>
+        <div>B91 3DL</div>
+      </Segment>
     </Container>
   );
 }

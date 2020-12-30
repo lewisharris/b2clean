@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import H4 from "../elements/H4";
+import H3 from "../elements/H3";
 import P from "../elements/P";
 import carpet from "../images/carpet.jpg";
 
@@ -38,11 +38,11 @@ export default function Section(props) {
   return (
     <Container>
       <InnerContainer>
-        <H4 dark>{props.title}</H4>
+        <H3 dark>{props.title}</H3>
         <P dark>{props.body}</P>
       </InnerContainer>
       <InnerContainer>
-        <Img src={carpet} alt="props.title" />
+        <Img src={props.image} alt="props.title" />
       </InnerContainer>
     </Container>
   );
