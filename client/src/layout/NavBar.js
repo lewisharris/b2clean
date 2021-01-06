@@ -43,7 +43,7 @@ export default function NavBar() {
       <Container>
         <Link to="/"></Link>
         <Link to="/services">Services</Link>
-        <Link to="/covid">COVID19</Link>
+        <Link to="/covid">COVID-19</Link>
         <Link to="/contact">Contact</Link>
       </Container>
     </div>
