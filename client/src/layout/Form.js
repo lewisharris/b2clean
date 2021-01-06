@@ -1,10 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+
 const FormStyle = styled.form`
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  margin: 0px auto;
 `;
+const Label = styled.label`
+  margin: 5px 0px;
+`;
+const Input = styled.input`
+  height: ${props => (props.large ? "100px" : "30px")};
+  background: lightgray;
+  border: none;
+  margin: 5px 0px;
+`;
+const Button = styled.button`
+  margin: 5px 0px;
+`;
+
 export default class Form extends React.Component {
   constructor(props) {
     super(props);
@@ -22,15 +37,15 @@ export default class Form extends React.Component {
         action="https://formspree.io/f/mqkggnwl"
         method="POST"
       >
-        <label>Name:</label>
-        <input type="text" name="name" />
-        <label>Email:</label>
-        <input type="email" name="email" />
-        <label> Number:</label>
-        <input type="number" name="number" />
-        <label>Message:</label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+        <Label>Name:</Label>
+        <Input type="text" name="name" />
+        <Label>Email:</Label>
+        <Input type="email" name="email" />
+        <Label> Number:</Label>
+        <Input type="number" name="number" />
+        <Label>Message:</Label>
+        <Input type="text" name="message" large />
+        {status === "SUCCESS" ? <p>Thanks!</p> : <Button>Submit</Button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </FormStyle>
     );
