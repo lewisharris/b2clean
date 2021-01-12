@@ -9,7 +9,7 @@ const Container = styled.div`
   padding: 50px 0px;
 `;
 const Heading = styled.span`
-  color: #0684a0;
+  color: #1c5598;
   font-size: 36px;
   margin: 10px auto;
   text-align: center;
@@ -55,11 +55,11 @@ export default function Sectors() {
       <Grid>
         <GridSegment>
           <SubHeading>Golf Clubs</SubHeading>
-          <P gray>Some Text about the sector or service mentioned</P>
+          <P gray>Over 10 years experience in cleaning golf clubs</P>
         </GridSegment>
         <GridSegment>
           <SubHeading>Offices</SubHeading>
-          <P gray>Some Text about the sector or service mentioned</P>
+          <P gray>One off or contract scheduled office cleans.</P>
         </GridSegment>
         <GridSegment>
           <SubHeading>Charity Offices</SubHeading>

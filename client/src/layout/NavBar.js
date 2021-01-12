@@ -22,7 +22,7 @@ const Container = styled.nav`
     padding: 0px 2vw;
   }
   a:hover {
-    color: #41deff;
+    color: #4e95e8;
     cursor: pointer;
   }
 `;

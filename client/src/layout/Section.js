@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import H3 from "../elements/H3";
 import P from "../elements/P";
-import carpet from "../images/carpet.jpg";
 
 const Container = styled.div`
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.05);
   padding: 40px;
   box-sizing: border-box;
   margin: 40px auto;
@@ -16,6 +15,7 @@ const Container = styled.div`
   min-width: 75vw;
   max-width: 1000px;
   justify-content: center;
+  text-align: left;
 `;
 const InnerContainer = styled.div`
   display: flex;
@@ -25,6 +25,7 @@ const InnerContainer = styled.div`
   min-width: 300px;
   width: 50%;
   box-sizing: border-box;
+  border: none;
   @media only screen and (max-width: 680px) {
     min-width: 100%;
   }
@@ -32,6 +33,10 @@ const InnerContainer = styled.div`
 
 const Img = styled.img`
   width: 100%;
+  border: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 `;
 
 export default function Section(props) {

@@ -6,7 +6,7 @@ const Container = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 1000px;
-  margin: 150px auto;
+  margin: 50px auto;
   position: relative;
   justify-content: center;
 `;

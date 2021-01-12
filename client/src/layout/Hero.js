@@ -2,16 +2,25 @@ import React from "react";
 import styled from "styled-components";
 import NavBar from "./NavBar";
 import HeroLinks from "./HeroLinks";
-import CovidImage from "../images/covid-image.jpg";
 import H1 from "../elements/H1";
 import H2 from "../elements/H2";
 import Button from "../elements/Button";
+import CovidImage from "../images/covid-image.jpg";
+import ElectroStatic from "../images/electrostatic-cleaning.jpg";
+import PressureCleaning from "../images/pressure-cleaning.jpg";
+import HasmatClean from "../images/clean-hasmat.jpg";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: ${props => (props.size === "full" ? "100vh" : "50vh")};
   background: gray;
-  background-image: url(${CovidImage});
+  background-image: ${props =>
+    props.image === "covid"
+      ? `url(${CovidImage})`
+      : props.image === "electro"
+      ? `url(${ElectroStatic})`
+      : `url(${HasmatClean})`};
   background-size: cover;
   background-position: bottom;
   background-repeat: none;
@@ -22,10 +31,10 @@ const Container = styled.div`
 
 const Headers = styled.div`
   z-index: 2;
-  margin: 10vw;
   position: absolute;
   top: 10vmin;
-  left: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 const Overlay = styled.div`
@@ -41,14 +50,26 @@ const Overlay = styled.div`
 export default function Hero(props) {
   return (
     <div>
-      <Container>
+      <Container image={props.image} size={props.size}>
         <Overlay />
         <NavBar />
         <Headers>
-          <H1>{props.title}</H1>
-          <H2>{props.body}</H2>
-          <Button>{props.button}</Button>
-          <HeroLinks />
+          <H1 center={props.center}>{props.title}</H1>
+          <H2 center={props.center}>{props.body}</H2>
+          {props.buttonLink ? (
+            <Link to={props.buttonLink}>
+              <Button>{props.button}</Button>
+            </Link>
+          ) : null}
+
+          <HeroLinks
+            headerOne={props.heroHeaderOne}
+            bodyOne={props.heroBodyOne}
+            headerTwo={props.heroHeaderTwo}
+            bodyTwo={props.heroBodyTwo}
+            headerThree={props.heroHeaderThree}
+            bodyThree={props.heroBodyThree}
+          />
         </Headers>
       </Container>
     </div>

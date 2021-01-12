@@ -7,29 +7,36 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   margin: 0px;
   margin-top: 10vmin;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 const LinkSection = styled.div`
   margin: 0px;
   margin-right: 2vw;
+  @media only screen and (max-width: 600px) {
+    margin-right: 0px;
+    margin-top: 30px;
+  }
 `;
 
-export default function HeroLinks() {
+export default function HeroLinks(props) {
   return (
     <Container>
       <LinkSection>
-        <H4>Carpet Cleaning</H4>
-        <P>Specialist Carpet cleaning for all types of piles</P>
+        <H4>{props.headerOne}</H4>
+        <P>{props.bodyOne}</P>
       </LinkSection>
       <LinkSection>
-        <H4>Carpet Cleaning</H4>
-        <P>Specialist Carpet cleaning for all types of piles</P>
+        <H4>{props.headerTwo}</H4>
+        <P>{props.bodyTwo}</P>
       </LinkSection>
       <LinkSection>
-        <H4>Carpet Cleaning</H4>
-        <P>Specialist Carpet cleaning for all types of piles</P>
+        <H4>{props.headerThree}</H4>
+        <P>{props.bodyThree}</P>
       </LinkSection>
     </Container>
   );

@@ -1,15 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import P from "../elements/P";
 
 const Container = styled.div`
   width: 100%;
   box-sizing: border-box;
-  background: #4283ac;
+  background: #1c5598;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   flex-direction: row;
-  padding: 50px 0px;
+  margin: 100px 0px 0px 0px;
+  padding: 50px 20px;
   a {
     color: white;
     text-decoration: none;
@@ -24,7 +27,7 @@ const Container = styled.div`
 const Segment = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0px 20vw;
+  margin: 0px 20px;
 `;
 export default function Footer() {
   return (
@@ -35,11 +38,15 @@ export default function Footer() {
         <Link to="/contact">Contact</Link>
       </Segment>
       <Segment>
-        <div>B2Clean ltd</div>
-        <div>Malvern House</div>
-        <div>New Road</div>
-        <div>Solihull</div>
-        <div>B91 3DL</div>
+        <P close>B2Clean ltd</P>
+        <P close>Malvern House</P>
+        <P close>New Road</P>
+        <P close>Solihull</P>
+        <P close>B91 3DL</P>
+      </Segment>
+      <Segment>
+        <P close>07968624375</P>
+        <P close>enquiries@b2clean.co.uk</P>
       </Segment>
     </Container>
   );
