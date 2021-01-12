@@ -35,6 +35,9 @@ const Headers = styled.div`
   top: 10vmin;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+  padding: 0px 10vw;
+  box-sizing: border-box;
 `;
 
 const Overlay = styled.div`
