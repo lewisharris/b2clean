@@ -48,34 +48,30 @@ const Logo = styled.img`
 `;
 
 export default function NavBar() {
-  const [windowWidth, setWindowWidth] = useState({
-    windowWidth: window.innerWidth
-  });
-  useEffect(() => {
-    setWindowWidth({ windowWidth: window.innerWidth });
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 500;
 
-    window.addEventListener("resize", () => {
-      setWindowWidth({ windowWidth: window.innerWidth });
-    });
-    window.removeEventListener("resize", setWindowWidth);
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
-  return (
-    <div>
-      {windowWidth >= 500 ? (
-        <>
-          <Logo src={B2CleanLogo} />
-          <Container>
-            <Link to="/"></Link>
-            <Link to="/services">Services</Link>
-            <Link to="/covid">COVID-19</Link>
-            <Link to="/contact">Contact</Link>
-          </Container>
-        </>
-      ) : (
-        <>
-          <Logo src={B2CleanLogo} />
-        </>
-      )}
-    </div>
+
+  return width >= breakpoint ? (
+    <>
+      <Logo src={B2CleanLogo} />
+      <Container>
+        <Link to="/"></Link>
+        <Link to="/services">Services</Link>
+        <Link to="/covid">COVID-19</Link>
+        <Link to="/contact">Contact</Link>
+      </Container>
+    </>
+  ) : (
+    <>
+      <Logo src={B2CleanLogo} />
+    </>
   );
 }
