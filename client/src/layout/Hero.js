@@ -51,6 +51,9 @@ const Overlay = styled.div`
 `;
 
 export default function Hero(props) {
+  const windowWidth = window.addEventListener("resize", () => {
+    return window.innerWidth;
+  });
   return (
     <div>
       <Container image={props.image} size={props.size}>

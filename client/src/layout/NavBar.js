@@ -25,6 +25,13 @@ const Container = styled.nav`
     color: #4e95e8;
     cursor: pointer;
   }
+  @media only screen and (max-width: 540px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+    padding-right: 10vw;
+    line-height: 1.5;
+  }
 `;
 
 const Logo = styled.img`
