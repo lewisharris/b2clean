@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import B2CleanLogo from "../images/b2clean-logo.png";
 
 const Container = styled.nav`
@@ -41,18 +41,41 @@ const Logo = styled.img`
   left: 10vw;
   width: 250px;
   z-index: 2;
+  @media only screen and (max-width: 400px) {
+    top: 20px;
+    width: 150px;
+  }
 `;
 
 export default function NavBar() {
+  const [windowWidth, setWindowWidth] = useState({
+    windowWidth: window.innerWidth
+  });
+  useEffect(() => {
+    setWindowWidth({ windowWidth: window.innerWidth });
+
+    window.addEventListener("resize", () => {
+      setWindowWidth({ windowWidth: window.innerWidth });
+    });
+    window.removeEventListener("resize", setWindowWidth);
+  }, []);
   return (
     <div>
-      <Logo src={B2CleanLogo} />
-      <Container>
-        <Link to="/"></Link>
-        <Link to="/services">Services</Link>
-        <Link to="/covid">COVID-19</Link>
-        <Link to="/contact">Contact</Link>
-      </Container>
+      {windowWidth >= 500 ? (
+        <>
+          <Logo src={B2CleanLogo} />
+          <Container>
+            <Link to="/"></Link>
+            <Link to="/services">Services</Link>
+            <Link to="/covid">COVID-19</Link>
+            <Link to="/contact">Contact</Link>
+          </Container>
+        </>
+      ) : (
+        <>
+          <Logo src={B2CleanLogo} />
+        </>
+      )}
     </div>
   );
 }

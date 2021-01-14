@@ -9,17 +9,26 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: left;
   margin: 0px;
-  margin-top: 10vmin;
-  @media only screen and (max-width: 600px) {
+  margin-top: 50px;
+  @media only screen and (max-width: 500px) {
     flex-direction: column;
+    margin-top: 0px;
+  }
+  @media only screen and (min-width: 490px) and (max-width: 740px) {
+    flex-direction: column;
+    margin-top: 0px;
   }
 `;
 const LinkSection = styled.div`
   margin: 0px;
+  min-width: 100px;
   margin-right: 2vw;
   @media only screen and (max-width: 600px) {
     margin-right: 0px;
-    margin-top: 30px;
+    margin-top: 15px;
+  }
+  @media only screen and (min-width: 490px) and (max-width: 740px) {
+    margin-top: 20px;
   }
 `;
 

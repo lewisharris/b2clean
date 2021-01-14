@@ -16,6 +16,10 @@ const Container = styled.div`
   max-width: 1000px;
   justify-content: center;
   text-align: left;
+  @media only screen and (max-width: 500px) {
+    padding: 40px 0px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0);
+  }
 `;
 const InnerContainer = styled.div`
   display: flex;

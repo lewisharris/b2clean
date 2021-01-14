@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "./layout/Hero";
 import Container from "./layout/Container";
 import Section from "./layout/Section";
@@ -83,6 +83,9 @@ const sectionThreeBody = (
 );
 
 export default function Services() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Hero
@@ -99,7 +102,7 @@ export default function Services() {
         heroBodyTwo="High pressure washing to restore 
         driveways and walls"
         heroHeaderThree="Electrostatic cleaning"
-        heroBodyThree="Touchless disinfectant to reduce 
+        heroBodyThree="Contactless disinfectant to reduce 
         contamination throughout your premises"
       />
       <CovidNotice />

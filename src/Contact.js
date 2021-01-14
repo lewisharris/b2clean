@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Form from "./layout/Form";
 import Hero from "./layout/Hero";
 import H2 from "./elements/H2";
@@ -16,6 +16,9 @@ const P = styled.p`
 `;
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Hero title="Contact B2Clean" center={true} />

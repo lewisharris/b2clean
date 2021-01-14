@@ -6,6 +6,9 @@ const FormStyle = styled.form`
   flex-direction: column;
   max-width: 500px;
   margin: 50px auto auto auto;
+  @media only screen and (max-width: 500px) {
+    max-width: 90vw;
+  }
 `;
 const Label = styled.label`
   margin: 5px 0px;

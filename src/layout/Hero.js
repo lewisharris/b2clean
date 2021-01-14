@@ -3,7 +3,7 @@ import styled from "styled-components";
 import NavBar from "./NavBar";
 import HeroLinks from "./HeroLinks";
 import H1 from "../elements/H1";
-import H2 from "../elements/H2";
+import H3 from "../elements/H3";
 import Button from "../elements/Button";
 import CovidImage from "../images/covid-image.jpg";
 import ElectroStatic from "../images/electrostatic-cleaning.jpg";
@@ -32,12 +32,15 @@ const Container = styled.div`
 const Headers = styled.div`
   z-index: 2;
   position: absolute;
-  top: 10vmin;
+  top: 45%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -45%);
   width: 100%;
   padding: 0px 10vw;
   box-sizing: border-box;
+  @media only screen and (max-width: 540px) {
+    top: 50%;
+  }
 `;
 
 const Overlay = styled.div`
@@ -61,7 +64,7 @@ export default function Hero(props) {
         <NavBar />
         <Headers>
           <H1 center={props.center}>{props.title}</H1>
-          <H2 center={props.center}>{props.body}</H2>
+          <H3 center={props.center}>{props.body}</H3>
           {props.buttonLink ? (
             <Link to={props.buttonLink}>
               <Button>{props.button}</Button>

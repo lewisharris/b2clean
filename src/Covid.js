@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "./layout/Hero";
 import H2 from "./elements/H2";
 import P from "./elements/P";
@@ -27,6 +27,9 @@ const Button = styled.button`
 `;
 
 export default function Covid() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Hero
