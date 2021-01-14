@@ -8,7 +8,7 @@ import Footer from "./layout/Footer";
 
 function App() {
   return (
-    <Router basename={process.env.public_URL}>
+    <Router basename="/">
       <div className="App"></div>
       <Switch>
         <Route exact path="/">
