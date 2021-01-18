@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/b2clean/static/css/main.4c9e30d8.chunk.css",
-    "main.js": "/b2clean/static/js/main.9e4df2ba.chunk.js",
-    "main.js.map": "/b2clean/static/js/main.9e4df2ba.chunk.js.map",
-    "runtime-main.js": "/b2clean/static/js/runtime-main.fdb1f582.js",
-    "runtime-main.js.map": "/b2clean/static/js/runtime-main.fdb1f582.js.map",
-    "static/js/2.c01339b6.chunk.js": "/b2clean/static/js/2.c01339b6.chunk.js",
-    "static/js/2.c01339b6.chunk.js.map": "/b2clean/static/js/2.c01339b6.chunk.js.map",
-    "static/js/3.6f666e3f.chunk.js": "/b2clean/static/js/3.6f666e3f.chunk.js",
-    "static/js/3.6f666e3f.chunk.js.map": "/b2clean/static/js/3.6f666e3f.chunk.js.map",
+    "main.js": "/b2clean/static/js/main.442a1563.chunk.js",
+    "main.js.map": "/b2clean/static/js/main.442a1563.chunk.js.map",
+    "runtime-main.js": "/b2clean/static/js/runtime-main.51d682cb.js",
+    "runtime-main.js.map": "/b2clean/static/js/runtime-main.51d682cb.js.map",
+    "static/js/2.4813ae52.chunk.js": "/b2clean/static/js/2.4813ae52.chunk.js",
+    "static/js/2.4813ae52.chunk.js.map": "/b2clean/static/js/2.4813ae52.chunk.js.map",
+    "static/js/3.a615fcef.chunk.js": "/b2clean/static/js/3.a615fcef.chunk.js",
+    "static/js/3.a615fcef.chunk.js.map": "/b2clean/static/js/3.a615fcef.chunk.js.map",
     "index.html": "/b2clean/index.html",
     "static/css/main.4c9e30d8.chunk.css.map": "/b2clean/static/css/main.4c9e30d8.chunk.css.map",
-    "static/js/2.c01339b6.chunk.js.LICENSE.txt": "/b2clean/static/js/2.c01339b6.chunk.js.LICENSE.txt",
+    "static/js/2.4813ae52.chunk.js.LICENSE.txt": "/b2clean/static/js/2.4813ae52.chunk.js.LICENSE.txt",
     "static/media/b2clean-logo.615a4579.png": "/b2clean/static/media/b2clean-logo.615a4579.png",
     "static/media/carpet-cleaning.8bdc8925.jpg": "/b2clean/static/media/carpet-cleaning.8bdc8925.jpg",
     "static/media/clean-hasmat.dfcf18cc.jpg": "/b2clean/static/media/clean-hasmat.dfcf18cc.jpg",
@@ -20,9 +20,9 @@
     "static/media/pressure-cleaning.73620026.jpg": "/b2clean/static/media/pressure-cleaning.73620026.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fdb1f582.js",
-    "static/js/2.c01339b6.chunk.js",
+    "static/js/runtime-main.51d682cb.js",
+    "static/js/2.4813ae52.chunk.js",
     "static/css/main.4c9e30d8.chunk.css",
-    "static/js/main.9e4df2ba.chunk.js"
+    "static/js/main.442a1563.chunk.js"
   ]
 }

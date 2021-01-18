@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import B2CleanLogo from "../images/b2clean-logo.png";
+import Hamburger from "./Hamburger";
 
 const Container = styled.nav`
   position: absolute;
@@ -72,6 +73,7 @@ export default function NavBar() {
   ) : (
     <>
       <Logo src={B2CleanLogo} />
+      <Hamburger />
     </>
   );
 }
