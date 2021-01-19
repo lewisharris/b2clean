@@ -51,7 +51,7 @@ export default function Section(props) {
         <P dark>{props.body}</P>
       </InnerContainer>
       <InnerContainer>
-        <Img src={props.image} alt="props.title" />
+        <Img src={props.image} alt={props.title} />
       </InnerContainer>
     </Container>
   );

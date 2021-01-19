@@ -30,7 +30,7 @@ const Container = styled.div`
 `;
 
 const Headers = styled.div`
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   top: 45%;
   left: 50%;
@@ -66,7 +66,7 @@ export default function Hero(props) {
           <H1 center={props.center}>{props.title}</H1>
           <H3 center={props.center}>{props.body}</H3>
           {props.buttonLink ? (
-            <Link to={props.buttonLink}>
+            <Link to={props.buttonLink} replace>
               <Button>{props.button}</Button>
             </Link>
           ) : null}

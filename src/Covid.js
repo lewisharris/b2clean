@@ -38,7 +38,7 @@ export default function Covid() {
         title="COVID-19"
         body="Keeping your business Covid secure"
         button="Find Out More"
-        buttonLink
+        buttonLink=""
         heroHeaderOne="Fogging"
         heroBodyOne="Efficient and fast cleanings"
         heroHeaderTwo="Electrostatic cleaning"

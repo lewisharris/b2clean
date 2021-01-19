@@ -64,10 +64,15 @@ export default function NavBar() {
     <>
       <Logo src={B2CleanLogo} />
       <Container>
-        <Link to="/"></Link>
-        <Link to="/services">Services</Link>
-        <Link to="/covid">COVID-19</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/services" replace>
+          Services
+        </Link>
+        <Link to="/covid" replace>
+          COVID-19
+        </Link>
+        <Link to="/contact" replace>
+          Contact
+        </Link>
       </Container>
     </>
   ) : (
