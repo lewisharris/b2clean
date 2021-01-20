@@ -10,6 +10,7 @@ import ElectroStatic from "../images/electrostatic-cleaning.jpg";
 import PressureCleaning from "../images/pressure-cleaning.jpg";
 import HasmatClean from "../images/clean-hasmat.jpg";
 import { Link } from "react-router-dom";
+import MouseScroll from "./MouseScroll";
 
 const Container = styled.div`
   width: 100vw;
@@ -57,6 +58,7 @@ export default function Hero(props) {
   const windowWidth = window.addEventListener("resize", () => {
     return window.innerWidth;
   });
+
   return (
     <div>
       <Container image={props.image} size={props.size}>
@@ -80,6 +82,7 @@ export default function Hero(props) {
             bodyThree={props.heroBodyThree}
           />
         </Headers>
+        <MouseScroll />
       </Container>
     </div>
   );
