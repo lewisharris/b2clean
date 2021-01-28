@@ -111,16 +111,19 @@ export default function Services() {
           Services we provide..
         </H2>
         <Section
+          dark
           image={carpetImage}
           title={sectionOneHeader}
           body={sectionOneBody}
         />
         <Section
+          highlight
           image={pressureImage}
           title={sectionTwoHeader}
           body={sectionTwoBody}
         />
         <Section
+          dark
           image={electrostaticImage}
           title={sectionThreeHeader}
           body={sectionThreeBody}

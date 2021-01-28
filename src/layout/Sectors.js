@@ -35,7 +35,7 @@ const GridSegment = styled.div`
   margin: 10px;
   padding: 20px 40px;
   box-sizing: border-box;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   min-width: 250px;
   min-height: 150px;
@@ -58,24 +58,22 @@ export default function Sectors() {
           <P gray>Over 10 years experience in cleaning golf clubs</P>
         </GridSegment>
         <GridSegment>
-          <SubHeading>Offices</SubHeading>
+          <SubHeading>Offices and Training Centres</SubHeading>
           <P gray>One off or contract scheduled office cleans.</P>
         </GridSegment>
         <GridSegment>
-          <SubHeading>Charity Offices</SubHeading>
-          <P gray>Some Text about the sector or service mentioned</P>
-        </GridSegment>
-        <GridSegment>
-          <SubHeading>Restaurants</SubHeading>
-          <P gray>Some Text about the sector or service mentioned</P>
+          <SubHeading>Leisure</SubHeading>
+          <P gray>
+            Our fully trained staff are available 7 days a week to ensure you
+            receive the service you require
+          </P>
         </GridSegment>
         <GridSegment>
           <SubHeading>Coffee Shops</SubHeading>
-          <P gray>Some Text about the sector or service mentioned</P>
-        </GridSegment>
-        <GridSegment>
-          <SubHeading>Training Centres</SubHeading>
-          <P gray>Some Text about the sector or service mentioned</P>
+          <P gray>
+            We know how tough it can be to keep your bar or coffee shop clean.
+            Be it a big or small unit we can help.
+          </P>
         </GridSegment>
       </Grid>
     </Container>
