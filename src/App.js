@@ -19,13 +19,13 @@ function App() {
         <Route path="/">
           <Services />
         </Route>
-        <Route exact path="/services">
+        <Route path="/services">
           <Services />
         </Route>
-        <Route exact path="/covid">
+        <Route path="/covid">
           <Covid />
         </Route>
-        <Route exact path="/contact">
+        <Route path="/contact">
           <Contact />
         </Route>
       </Switch>
