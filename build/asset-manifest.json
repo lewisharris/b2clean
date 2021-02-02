@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c9e30d8.chunk.css",
-    "main.js": "/static/js/main.12020943.chunk.js",
-    "main.js.map": "/static/js/main.12020943.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.358c0de6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.358c0de6.js.map",
-    "static/js/2.120d5695.chunk.js": "/static/js/2.120d5695.chunk.js",
-    "static/js/2.120d5695.chunk.js.map": "/static/js/2.120d5695.chunk.js.map",
-    "static/js/3.a615fcef.chunk.js": "/static/js/3.a615fcef.chunk.js",
-    "static/js/3.a615fcef.chunk.js.map": "/static/js/3.a615fcef.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.4c9e30d8.chunk.css.map": "/static/css/main.4c9e30d8.chunk.css.map",
-    "static/js/2.120d5695.chunk.js.LICENSE.txt": "/static/js/2.120d5695.chunk.js.LICENSE.txt",
-    "static/media/b2clean-logo.615a4579.png": "/static/media/b2clean-logo.615a4579.png",
-    "static/media/carpet-cleaning.8bdc8925.jpg": "/static/media/carpet-cleaning.8bdc8925.jpg",
-    "static/media/clean-hasmat.03c56c89.jpg": "/static/media/clean-hasmat.03c56c89.jpg",
-    "static/media/covid-image.e87d3273.jpg": "/static/media/covid-image.e87d3273.jpg",
-    "static/media/electrostatic-cleaning.f75dffbd.jpg": "/static/media/electrostatic-cleaning.f75dffbd.jpg",
-    "static/media/pressure-cleaning.a3a53d83.jpg": "/static/media/pressure-cleaning.a3a53d83.jpg"
+    "main.css": "/b2clean/static/css/main.4c9e30d8.chunk.css",
+    "main.js": "/b2clean/static/js/main.8832c60a.chunk.js",
+    "main.js.map": "/b2clean/static/js/main.8832c60a.chunk.js.map",
+    "runtime-main.js": "/b2clean/static/js/runtime-main.51d682cb.js",
+    "runtime-main.js.map": "/b2clean/static/js/runtime-main.51d682cb.js.map",
+    "static/js/2.1c23b12b.chunk.js": "/b2clean/static/js/2.1c23b12b.chunk.js",
+    "static/js/2.1c23b12b.chunk.js.map": "/b2clean/static/js/2.1c23b12b.chunk.js.map",
+    "static/js/3.a615fcef.chunk.js": "/b2clean/static/js/3.a615fcef.chunk.js",
+    "static/js/3.a615fcef.chunk.js.map": "/b2clean/static/js/3.a615fcef.chunk.js.map",
+    "index.html": "/b2clean/index.html",
+    "static/css/main.4c9e30d8.chunk.css.map": "/b2clean/static/css/main.4c9e30d8.chunk.css.map",
+    "static/js/2.1c23b12b.chunk.js.LICENSE.txt": "/b2clean/static/js/2.1c23b12b.chunk.js.LICENSE.txt",
+    "static/media/b2clean-logo.615a4579.png": "/b2clean/static/media/b2clean-logo.615a4579.png",
+    "static/media/carpet-cleaning.8bdc8925.jpg": "/b2clean/static/media/carpet-cleaning.8bdc8925.jpg",
+    "static/media/clean-hasmat.03c56c89.jpg": "/b2clean/static/media/clean-hasmat.03c56c89.jpg",
+    "static/media/covid-image.e87d3273.jpg": "/b2clean/static/media/covid-image.e87d3273.jpg",
+    "static/media/electrostatic-cleaning.f75dffbd.jpg": "/b2clean/static/media/electrostatic-cleaning.f75dffbd.jpg",
+    "static/media/pressure-cleaning.a3a53d83.jpg": "/b2clean/static/media/pressure-cleaning.a3a53d83.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.358c0de6.js",
-    "static/js/2.120d5695.chunk.js",
+    "static/js/runtime-main.51d682cb.js",
+    "static/js/2.1c23b12b.chunk.js",
     "static/css/main.4c9e30d8.chunk.css",
-    "static/js/main.12020943.chunk.js"
+    "static/js/main.8832c60a.chunk.js"
   ]
 }

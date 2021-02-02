@@ -97,13 +97,13 @@ export default function Hamburger() {
     <Menu>
       <Overlay onClick={handleToggle} />
       <Ul>
-        <Link to="/services" onClick={handleToggle}>
+        <Link to="/services" replace onClick={handleToggle}>
           <Li>Services</Li>
         </Link>
-        <Link to="/covid" onClick={handleToggle}>
+        <Link to="/covid" replace onClick={handleToggle}>
           <Li>Covid</Li>
         </Link>
-        <Link to="/contact" onClick={handleToggle}>
+        <Link to="/contact" replace onClick={handleToggle}>
           <Li>Contact</Li>
         </Link>
       </Ul>
