@@ -38,6 +38,7 @@ const Headers = styled.div`
   transform: translate(-50%, -45%);
   width: 100%;
   padding: 0px 10vw;
+  text-align: left;
   box-sizing: border-box;
   @media only screen and (max-width: 540px) {
     top: 50%;
@@ -69,7 +70,7 @@ export default function Hero(props) {
           <H3 center={props.center}>{props.body}</H3>
           {props.buttonLink ? (
             <Link to={props.buttonLink} replace>
-              <Button>{props.button}</Button>
+              <Button left>{props.button}</Button>
             </Link>
           ) : null}
 

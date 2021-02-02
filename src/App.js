@@ -14,22 +14,23 @@ import Footer from "./layout/Footer";
 function App() {
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
-      <div className="App"></div>
-      <Switch>
-        <Route path="/">
-          <Services />
-        </Route>
-        <Route path="/services">
-          <Services />
-        </Route>
-        <Route path="/covid">
-          <Covid />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-      </Switch>
-      <Footer />
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Services />
+          </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path="/covid">
+            <Covid />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
     </HashRouter>
   );
 }
