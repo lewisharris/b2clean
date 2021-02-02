@@ -4,7 +4,7 @@ import Services from "./Services";
 import Covid from "./Covid";
 import Contact from "./Contact";
 import {
-  Router as BrowserRouter,
+  BrowserRouter as Router,
   HashRouter,
   Switch,
   Route
@@ -13,10 +13,10 @@ import Footer from "./layout/Footer";
 
 function App() {
   return (
-    <HashRouter>
+    <Router>
       <div className="App">
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Services />
           </Route>
           <Route path="/services">
@@ -32,7 +32,7 @@ function App() {
         <Footer />
         {console.log("loaded page")}
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
