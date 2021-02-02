@@ -13,7 +13,7 @@ import Footer from "./layout/Footer";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="/">
       <div className="App">
         <Switch>
           <Route exact path="/">
