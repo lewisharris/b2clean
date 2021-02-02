@@ -30,6 +30,7 @@ function App() {
           </Route>
         </Switch>
         <Footer />
+        {console.log("loaded page")}
       </div>
     </HashRouter>
   );
