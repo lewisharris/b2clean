@@ -16,7 +16,7 @@ function App() {
     <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="App"></div>
       <Switch>
-        <Route exact path="/">
+        <Route path="/">
           <Services />
         </Route>
         <Route exact path="/services">
