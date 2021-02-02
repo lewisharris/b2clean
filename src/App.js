@@ -13,10 +13,10 @@ import Footer from "./layout/Footer";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <div className="App">
         <Switch>
-          <Route exact path="/">
+          <Route path="/">
             <Services />
           </Route>
           <Route path="/services">
