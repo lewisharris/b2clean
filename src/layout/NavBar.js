@@ -77,7 +77,7 @@ export default function NavBar() {
     </>
   ) : (
     <>
-      <Logo src={B2CleanLogo} />
+      <Logo src={SirrahcleanLogo} />
       <Hamburger />
     </>
   );

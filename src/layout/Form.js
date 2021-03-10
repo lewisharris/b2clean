@@ -56,7 +56,7 @@ export default class Form extends React.Component {
     return (
       <FormStyle
         onSubmit={this.submitForm}
-        action="https://formspree.io/f/mnqorbkq"
+        action="https://formspree.io/f/mjvpnwrb"
         method="POST"
       >
         <Label>Name:</Label>
