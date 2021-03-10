@@ -45,7 +45,7 @@ export default function Footer() {
     <Container>
       <Segment>
         <P close>07968624375</P>
-        <P close>enquiries@b2clean.co.uk</P>
+        <P close>enquiries@sirrahclean.co.uk</P>
         <br></br>
         <P close>SIRRAHCLEAN LTD</P>
         <P close>Malvern House</P>
