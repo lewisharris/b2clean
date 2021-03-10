@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import B2CleanLogo from "../images/b2clean-logo.png";
+import SirrahcleanLogo from "../images/sirrahclean-logo.png";
 import Hamburger from "./Hamburger";
 
 const Container = styled.nav`
@@ -62,7 +62,7 @@ export default function NavBar() {
 
   return width >= breakpoint ? (
     <>
-      <Logo src={B2CleanLogo} />
+      <Logo src={SirrahcleanLogo} />
       <Container>
         <Link to="/services" replace>
           Services

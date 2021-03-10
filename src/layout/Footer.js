@@ -47,7 +47,7 @@ export default function Footer() {
         <P close>07968624375</P>
         <P close>enquiries@b2clean.co.uk</P>
         <br></br>
-        <P close>B2Clean ltd</P>
+        <P close>SIRRAHCLEAN LTD</P>
         <P close>Malvern House</P>
         <P close>New Road</P>
         <P close>Solihull</P>

@@ -29,9 +29,9 @@ const sectionOneHeader = "Carpet Cleaning";
 const sectionOneBody = (
   <>
     <p>
-      B2clean provides a professional and thorough carpet cleaning service at an
-      affordable price. Using our time tested cleaning techniques and state of
-      the art technology together with the latest detergents we achieve
+      Sirrahclean provides a professional and thorough carpet cleaning service
+      at an affordable price. Using our time tested cleaning techniques and
+      state of the art technology together with the latest detergents we achieve
       fantastic results time after time.{" "}
       <p>We offer a comprehensive carpet cleaning service that includes:</p>
     </p>
@@ -52,7 +52,7 @@ const sectionTwoBody = (
     lose its neat finish. Sometimes this can go unnoticed as the effects are so
     gradual.
     <p>
-      Here at B2Clean we provide deep cleaning, restoring and renovation of
+      Here at Sirrahclean we provide deep cleaning, restoring and renovation of
       driveways and pathways, patios, terraces, stone and tiled surfaces.
     </p>
     We get rid of stains and discolouration of your driveway and patio, terrace
@@ -96,7 +96,7 @@ export default function Services() {
             making your property Covid Clean"
         button="Contact us"
         heroHeaderOne="Carpet Cleaning"
-        heroBodyOne="Specialist Carpet cleaning for all 
+        heroBodyOne="Specialist carpet cleaning for all 
         types of piles"
         heroHeaderTwo="Pressure Washing"
         heroBodyTwo="High pressure washing to restore 

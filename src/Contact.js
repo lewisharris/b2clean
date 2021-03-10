@@ -21,7 +21,7 @@ export default function Contact() {
   }, []);
   return (
     <div>
-      <Hero title="Contact B2Clean" center={true} />
+      <Hero title="Contact Sirrahclean" center={true} />
       <br></br>
       <br></br>
       <br></br>
